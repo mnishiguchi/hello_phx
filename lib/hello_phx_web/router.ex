@@ -16,7 +16,7 @@ defmodule HelloPhxWeb.Router do
   scope "/", HelloPhxWeb do
     pipe_through :browser
 
-    get "/hello", HelloController, :world
+    get "/hello/:name", HelloController, :world
     get "/", PageController, :index
   end
 
